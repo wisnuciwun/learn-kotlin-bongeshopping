@@ -36,4 +36,13 @@ object DataService {
         Product("Arrange Studio Hustle", "140200", R.drawable.shirt5),
     )
 
+    fun getProducts(category: String?) : List<Product> {
+        return when(category) {
+            "Shirts" -> shirts
+            "Hats" -> hats
+            "Hoodies" -> hoodies
+            else -> hats
+        }
+    }
+
 }

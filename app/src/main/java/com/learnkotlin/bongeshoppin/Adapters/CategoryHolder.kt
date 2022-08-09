@@ -12,11 +12,11 @@ class CategoryHolder(inflater: LayoutInflater, parent: ViewGroup, val itemCLick:
     private var imgView: ImageView? = null
     private var textView: TextView? = null
 
-
     init{
         imgView = itemView.findViewById(R.id.img_category)
         textView = itemView.findViewById(R.id.img_title)
     }
+
     fun bind(data: Category){
         imgView?.setImageResource(data.image)
         textView?.setText(data.title)
