@@ -14,6 +14,9 @@
         android:theme="@style/Theme.BongeShoppin"
         tools:targetApi="31">
         <activity
+            android:name=".Controller.ProductActivity"
+            android:exported="false" />
+        <activity
             android:name=".Controller.MainActivity"
             android:exported="true">
             <intent-filter>
